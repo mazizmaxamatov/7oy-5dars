@@ -1,5 +1,5 @@
 import axios from "axios";
-import  AddPosts  from "../Components/AddPosts";
+import  AddPosts  from "../components/AddPosts";
 import { Link } from "react-router-dom";
 import { useDeletePostMutation, useGetPostsQuery } from "../redux/getPosts";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ export const Comment = () => {
 
 
 
-  
+
   async function like(id) {
     await axios.put(
       `https://nt-devconnector.onrender.com/api/posts/like/${id}`,

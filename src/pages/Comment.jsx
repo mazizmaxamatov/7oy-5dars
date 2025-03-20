@@ -1,5 +1,5 @@
 import axios from "axios";
-import  AddPosts  from "../components/AddPosts";
+import  AddPosts  from "./components/AddPosts";
 import { Link } from "react-router-dom";
 import { useDeletePostMutation, useGetPostsQuery } from "../redux/getPosts";
 import { useEffect, useState } from "react";
